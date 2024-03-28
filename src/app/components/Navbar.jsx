@@ -18,11 +18,11 @@ const Navbar = () => {
             </a>
           </div>
           <div className="navmenu">
-            <ul className='md:flex hidden text-[0.7rem] font-sans justify-between uppercase gap-9 mr-2 w-full ' >
+            <ul className='md:flex hidden text-[0.7rem] font-sans justify-between uppercase gap-9 mr-6 w-full ' >
               <li>Home</li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >About us<MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-blue-300 top-5 px-2 w-36 py-2  " >
+                <ul className="absolute about-dropmenu -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-40 py-2  " >
                   <li>overview</li>
                   <li>facts & figures</li>
                   <li>quality management</li>
@@ -32,7 +32,7 @@ const Navbar = () => {
               </li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' > services <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu capitalize pt-4 flex -left-[28rem] justify-around bg-[#0000ffa6] top-5 px-2 w-[60rem] py-4  ">
+                <ul className="absolute about-dropmenu invisible capitalize pt-4 flex -left-[28rem] justify-around bg-[#0000ffa6] top-5 px-2 w-[60rem] py-4  ">
                   <div>
                     <h1 className='text-[0.9rem] mb-2 font-bold' >web and mobile app design</h1>
                     <li>web design</li>
@@ -72,27 +72,31 @@ const Navbar = () => {
               <li>Portfolio</li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >blog <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-blue-300 top-5 px-2 w-36 py-2  ">
-                  <li>About</li>
-                  <li>Team</li>
-                  <li>Contact</li>
+                <ul className="absolute about-dropmenu -left-14 invisible bg-[#0000ffa6] top-5 px-2 w-44 py-2  ">
+                  <li>sem</li>
+                  <li>web design</li>
+                  <li>website development</li>
+                  <li>seo</li>
+                  <li>social media</li>
+                  <li>web hosting</li>
+                  <li>blockchain</li>
                 </ul>
               </li>
               <li>Contact Us</li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >careers <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-blue-300 top-5 px-2 w-36 py-2  ">
-                  <li>About</li>
-                  <li>Team</li>
-                  <li>Contact</li>
+                <ul className="absolute about-dropmenu -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-40 py-2  ">
+                  <li>apply job</li>
+                  <li>check applied status</li>
+                  <li>career openings</li>
+                  <li>work culture</li>
                 </ul>
               </li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >login <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-blue-300 top-5 px-2 w-36 py-2  ">
-                  <li>About</li>
-                  <li>Team</li>
-                  <li>Contact</li>
+                <ul className="absolute about-dropmenu -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-36 py-2  ">
+                  <li>login as employee</li>
+                  <li>login as client</li>
                 </ul>
               </li>
             </ul>
