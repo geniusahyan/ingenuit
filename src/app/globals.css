@@ -46,3 +46,6 @@
 .about-dropmenu li:hover::after {
     width: 100%;
 }
+.about-dropmenu::-webkit-scrollbar{
+    width: 10px;
+}
