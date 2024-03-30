@@ -1,5 +1,6 @@
 "use client"
 
+import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import Image from 'next/image';
 
@@ -19,6 +20,7 @@ const Slider2 = () => {
           </div>
           <div className="w-1/2">
             <Canvas>
+                <OrbitControls />
                 <mesh>
                     <boxGeometry />
                     <meshNormalMaterial />
