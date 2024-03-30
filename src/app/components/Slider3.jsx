@@ -3,6 +3,7 @@
 import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import Image from 'next/image';
+import ComputersCanvas from './Computer';
 
 
 const Slider2 = () => {
@@ -19,13 +20,7 @@ const Slider2 = () => {
             </h1>
           </div>
           <div className="w-1/2">
-            <Canvas>
-                <OrbitControls />
-                <mesh>
-                    <boxGeometry />
-                    <meshNormalMaterial />
-                </mesh>
-            </Canvas>
+            <ComputersCanvas />
           </div>
         </div>
       </div>
