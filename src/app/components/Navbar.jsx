@@ -14,7 +14,7 @@ const Navbar = () => {
   const [mobMenuOpen, setmobMenuOpen] = useState(false);
   return (
     <>
-        <div className="flex items-center justify-between text-white px-6 bg-[#0000ffa6] ">
+        <div className="flex items-center z-30 mx-0 w-screen box-border absolute top-0 justify-between text-white px-6 bg-[#0000ff6b] ">
           <div className="">
             <a className="btn logo btn-ghost text-xl">
               <Image src={"/ingenuit.png"} width={120} height={100} />
@@ -25,7 +25,7 @@ const Navbar = () => {
               <li>Home</li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >About us<MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-40 py-2  " >
+                <ul className="absolute about-dropmenu capitalize -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-40 py-2  " >
                   <li>overview</li>
                   <li>facts & figures</li>
                   <li>quality management</li>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <li>Portfolio</li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >blog <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-14 invisible bg-[#0000ffa6] top-5 px-2 w-44 py-2  ">
+                <ul className="absolute about-dropmenu capitalize -left-14 invisible bg-[#0000ffa6] top-5 px-2 w-44 py-2  ">
                   <li>sem</li>
                   <li>web design</li>
                   <li>website development</li>
@@ -88,7 +88,7 @@ const Navbar = () => {
               <li>Contact Us</li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >careers <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-40 py-2  ">
+                <ul className="absolute about-dropmenu capitalize -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-40 py-2  ">
                   <li>apply job</li>
                   <li>check applied status</li>
                   <li>career openings</li>
@@ -97,7 +97,7 @@ const Navbar = () => {
               </li>
               <li className='relative about-dropdown ' >
                 <a className='flex justify-between gap-1 items-center  ' >login <MdArrowDropDown /> </a>
-                <ul className="absolute about-dropmenu -left-10 invisible bg-[#0000ffa6] top-5 px-2 w-36 py-2  ">
+                <ul className="absolute about-dropmenu capitalize -left-16 invisible bg-[#0000ffa6] top-5 px-2 w-36 py-2  ">
                   <li>login as employee</li>
                   <li>login as client</li>
                 </ul>
@@ -119,7 +119,7 @@ const Navbar = () => {
               <li>Home</li>
               <li className='relative about-dropdown ' >
                 <a onClick={()=>setaboutOpen(!aboutOpen)} className='flex justify-between gap-1 items-center ' >About us<MdArrowDropDown /> </a>
-                <ul className={`absolute about-dropmenu ${aboutOpen ? "visible ": "invisible" } left-20 bg-[#0000ffa6] top-5 px-2 w-40 py-2 `} >
+                <ul className={`absolute about-dropmenu capitalize ${aboutOpen ? "visible ": "invisible" } left-20 bg-[#0000ffa6] top-5 px-2 w-40 py-2 `} >
                   <li>overview</li>
                   <li>facts & figures</li>
                   <li>quality management</li>
@@ -169,7 +169,7 @@ const Navbar = () => {
               <li>Portfolio</li>
               <li className='relative about-dropdown ' >
                 <a onClick={()=>setblogOpen(!blogOpen)} className='flex justify-between gap-1 items-center  ' >blog <MdArrowDropDown /> </a>
-                <ul className={`absolute about-dropmenu ${blogOpen ? "visible ": "invisible" } left-20 bg-[#0000ffa6] -top-28 px-2 w-44 py-2 `}>
+                <ul className={`absolute about-dropmenu capitalize ${blogOpen ? "visible ": "invisible" } left-20 bg-[#0000ffa6] -top-28 px-2 w-44 py-2 `}>
                   <li>sem</li>
                   <li>web design</li>
                   <li>website development</li>
@@ -182,7 +182,7 @@ const Navbar = () => {
               <li>Contact Us</li>
               <li className='relative about-dropdown ' >
                 <a onClick={()=>setcareersOpen(!careersOpen)} className='flex justify-between gap-1 items-center  ' >careers <MdArrowDropDown /> </a>
-                <ul className={`absolute about-dropmenu ${careersOpen ? "visible ": "invisible" } left-20 invisible bg-[#0000ffa6] -top-28 px-2 w-40 py-2 `} >
+                <ul className={`absolute capitalize about-dropmenu ${careersOpen ? "visible ": "invisible" } left-20 invisible bg-[#0000ffa6] -top-28 px-2 w-40 py-2 `} >
                   <li>apply job</li>
                   <li>check applied status</li>
                   <li>career openings</li>
@@ -190,8 +190,8 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className='relative' >
-                <a className='flex justify-between gap-1 items-center  ' >login <MdArrowDropDown /> </a>
-                <ul className={`absolute about-dropmenu ${loginOpen ? "visible ": "invisible" } left-20 bg-[#0000ffa6] -top-28 px-2 w-36 py-2 `}>
+                <a onClick={()=>setloginOpen(!loginOpen)} className='flex justify-between gap-1 items-center  ' >login <MdArrowDropDown /> </a>
+                <ul className={`absolute capitalize about-dropmenu ${loginOpen ? "visible ": "invisible" } left-20 bg-[#0000ffa6] -top-28 px-2 w-36 py-2 `}>
                   <li>login as employee</li>
                   <li>login as client</li>
                 </ul>

@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: oswald;
+    src: url(../../public/oswald/Oswald-Regular.ttf);
+}
+
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    overflow: hidden;
+}
 
 .logo img {
     filter: contrast(10);
@@ -48,4 +63,10 @@
 }
 .about-dropmenu::-webkit-scrollbar{
     width: 10px;
+}
+.blockchain, .blockchain span{
+    font-family: oswald, sans-serif ;
+}
+.firstImageBack, .secondImageBack{
+    background: linear-gradient(100deg, #0404dd94 0%, rgba(9, 9, 121, 0.199) 75%, #0404dd94 100%);
 }
