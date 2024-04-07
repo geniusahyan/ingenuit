@@ -79,3 +79,10 @@ section{
 a {
     cursor: pointer;
 }
+.blogSvg svg rect{
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+}
+.blogSvg:hover svg rect{
+    stroke-dashoffset: 0;
+}
