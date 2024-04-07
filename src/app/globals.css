@@ -70,3 +70,7 @@ html, body{
 .firstImageBack, .secondImageBack{
     background: linear-gradient(100deg, #0404dd94 0%, rgba(9, 9, 121, 0.199) 75%, #0404dd94 100%);
 }
+
+a {
+    cursor: pointer;
+}

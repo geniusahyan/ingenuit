@@ -8,21 +8,34 @@ import Slider3 from './Slider3';
 
 const Hero = () => {
 
-  const [slider, setslider] = useState(3);
+  const [slider, setslider] = useState(1);
 
 
   useEffect(()=>{
-    if (slider > 3) {
-      setslider(1);
-    } else if(slider < 1){
-      setslider(3);
-    }
-    const sliderInterval = setInterval(()=>{
-      setslider(slider + 1)
-    },10000)
+    // const sliderInterval = setInterval(()=>{
+    //   setslider(slider + 1)
+    // },10000)
 
   },[slider])
 
+  if (slider > 3) {
+    setslider(1);
+  } else if(slider < 1){
+    setslider(3);
+  }
+
+  const IncreaseHandle = ()=>{
+    setslider(slider + 1);
+    if (slider > 3) {
+      setslider(1);
+    }
+  }
+  const DecreaseHandle = ()=>{
+    setslider(slider - 1);
+    if (slider < 1) {
+      setslider(3);
+    }
+  }
 
   return (
     <div className="w-screen relative h-screen">
@@ -34,10 +47,10 @@ const Hero = () => {
         <h1>0{slider}-03</h1>
         <div className='flex gap-4' >
           <FaArrowAltCircleLeft
-          onClick={()=>setslider(slider-1)}
+          onClick={IncreaseHandle}
           className='text-[yellow] cursor-pointer' />
           <FaArrowAltCircleRight
-          onClick={()=>setslider(slider+1)}
+          onClick={DecreaseHandle}
           className='text-[yellow] cursor-pointer' />
         </div>
       </div>
