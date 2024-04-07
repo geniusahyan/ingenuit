@@ -14,10 +14,10 @@ const Navbar = () => {
   const [mobMenuOpen, setmobMenuOpen] = useState(false);
   return (
     <>
-        <div className="flex items-center z-30 mx-0 w-screen box-border absolute top-0 justify-between text-white px-6 bg-[#0000ff6b] ">
+        <div className="flex items-center fixed z-30 mx-0 w-screen box-border top-0 justify-between text-white px-6 bg-[#0000ff6b] ">
           <div className="">
             <a className="btn logo btn-ghost text-xl">
-              <Image src={"/ingenuit.png"} width={120} height={100} />
+              <Image src={"/ingenuit.png"} width={120} height={100} alt='logo' />
             </a>
           </div>
           <div className="navmenu">

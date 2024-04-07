@@ -12,9 +12,9 @@ const Hero = () => {
 
 
   useEffect(()=>{
-    // const sliderInterval = setInterval(()=>{
-    //   setslider(slider + 1)
-    // },10000)
+    const sliderInterval = setTimeout(()=>{
+      setslider(slider + 1)
+    },10000)
 
   },[slider])
 
@@ -38,7 +38,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="w-screen relative h-screen">
+    <section className="w-screen relative h-screen">
       {
         slider == 1 ? <Slider1 /> : slider == 2 ? <Slider2 /> : slider == 3 ? <Slider3 /> : "null"
       }
@@ -54,7 +54,7 @@ const Hero = () => {
           className='text-[yellow] cursor-pointer' />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

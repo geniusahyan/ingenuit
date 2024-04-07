@@ -14,7 +14,18 @@ const Slider1 = () => {
           setInit(true);
         });
       },[])
+
+      useEffect(() => {
+        window.addEventListener("scroll",()=>{
+          if (window.scrollY > 50) {
+            setInit(false);
+          }else{
+            setInit(true);
+          }
+           })
     
+      }, []);
+
       const particlesLoaded = (container)=>{
         console.log(container);
       }
@@ -22,7 +33,7 @@ const Slider1 = () => {
   return (
     <>
         <div className="firstImage relative h-full w-full ">
-        <Image className='w-screen absolute top-0 left-0 h-screen ' src={"/background1.jpg"} width={1100} height={500} />
+        <Image className='w-screen absolute top-0 left-0 h-screen ' src={"/background1.jpg"} width={1100} height={500} alt='bgimage' />
         {
               init && (
                 <div className="w-full h-full absolute top-0 left-0 ">

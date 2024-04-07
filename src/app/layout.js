@@ -16,13 +16,19 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logoIcon.png" />
       </head>
       <body className="relative" >
-        <div className="bg-[#0a0a55] w-10 z-50 h-36 absolute top-[12rem] p-[3px] -left-1 " >
+        <div className="bg-[#0a0a55] w-10 z-50 h-36 fixed top-[12rem] p-[3px] -left-1 " >
           <div className="flex flex-col  gap-3 justify-between bg-transparent border-2 border-l-0 border-red-500 items-center w-full h-full py-1 text-md" >
-            <a target="_blank" href="https://www.instagram.com/_a._h.ya.n" className="text-[pink]" ><FaInstagram /> </a>
-            <a target="_blank" href="https://www.github.com/geniusahyan" className="text-[pink]" ><FaGithub /> </a>
+            <a target="_blank" href="https://www.github.com/geniusahyan" className="text-[blue]" ><FaGithub /> </a>
+            <a target="_blank" href="https://www.instagram.com/_a._h.ya.n" className="text-[red]" ><FaInstagram /> </a>
             <a target="_blank" href="https://www.linkedin.com/in/aslam-alam-305193286/" className="text-[pink]" ><FaLinkedin /> </a>
-            <a target="_blank" href="https://twitter.com/Aslam_Alam_07" className="text-[pink]" ><FaTwitter /> </a>
+            <a target="_blank" href="https://twitter.com/Aslam_Alam_07" className="text-[cyan]" ><FaTwitter /> </a>
           </div>
+        </div>
+        <div className="bg-[#0a0a55] w-8 z-50 h-24 flex flex-col justify-between fixed top-[30rem] p-[3px] right-1 " >
+          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
+          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
+          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
+          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
         </div>
         {children}
       </body>
