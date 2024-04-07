@@ -28,7 +28,7 @@ const Industries = () => {
             {
                 Product.map((item, index)=>{
                     return (
-                        <div className=" border-2 flex justify-between flex-col py-2 items-center " key={index}>
+                        <div className=" border-2 transition-all hover:shadow-2xl duration-300 flex hover:-translate-y-3 justify-between flex-col py-2 items-center " key={index}>
                             <img src={item.image} alt={item.title} />
                             <h1>{item.title}</h1>
                         </div>
