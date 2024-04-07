@@ -1,5 +1,5 @@
 "use client"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import Slider1 from './Slider1';
 import Slider2 from './Slider2';
@@ -10,6 +10,20 @@ const Hero = () => {
 
   const [slider, setslider] = useState(3);
 
+
+  useEffect(()=>{
+    if (slider > 3) {
+      setslider(1);
+    } else if(slider < 1){
+      setslider(3);
+    }
+    const sliderInterval = setInterval(()=>{
+      setslider(slider + 1)
+    },10000)
+
+  },[slider])
+
+
   return (
     <div className="w-screen relative h-screen">
       {
@@ -17,7 +31,7 @@ const Hero = () => {
       }
       
       <div className="button absolute text-white z-30 left-16 bottom-10 ">
-        <h1>0{slider}-04</h1>
+        <h1>0{slider}-03</h1>
         <div className='flex gap-4' >
           <FaArrowAltCircleLeft
           onClick={()=>setslider(slider-1)}

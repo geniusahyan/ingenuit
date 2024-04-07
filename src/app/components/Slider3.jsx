@@ -11,7 +11,7 @@ const Slider2 = () => {
   return (
     <>
         <div className="firstImage z-20 relative h-full w-full ">
-        <Image className='w-screen absolute top-0 left-0 h-screen ' src={"/background2.jpg"} width={1100} height={500} />
+        <Image className='w-screen absolute top-0 left-0 h-screen ' src={"/background3.jpg"} width={1100} height={500} />
         <div className="secondImageBack h-full flex w-full absolute ">
           <div className='w-1/2 text-white flex flex-col px-16 justify-center h-full ' >
             <h5 className='text-[yellow] text-xl uppercase ' >Ingenuit Technology</h5>
