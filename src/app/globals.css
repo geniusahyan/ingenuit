@@ -43,6 +43,8 @@ section{
     margin-bottom: 0.4rem;
     font-size: 0.8rem;
     position: relative;
+    list-style: none;
+    cursor: pointer;
 }
 
 .about-dropmenu li::after,

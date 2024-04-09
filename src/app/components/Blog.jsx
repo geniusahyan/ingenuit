@@ -6,11 +6,11 @@ const Blog = () => {
 
   const blogProduct = [
     { title:"facebook is testing cta...", image:"/social-media.png", color:"yellow", border:"white" },
-    { title:"role of travel portal api ...", image:"/Travel-software.jpg", color:"white", border:"yellow" },
+    { title:"role of travel portal api", image:"/Travel-software.jpg", color:"white", border:"yellow" },
     { title:"wordpress 5.0 'bebo&#'", image:"/WordPress-website.png", color:"yellow", border:"white" },
-    { title:"benefits of outsourcing wor...", image:"/Wordpress.png", color:"#0a0a49", border:"white" },
+    { title:"benefits of outsourcing wor...", image:"/wordpress.png", color:"#0a0a49", border:"white" },
     { title:"top social media strategies...", image:"/Stickers-stories.png", color:"white", border:"yellow" },
-    { title:"best wordpress eso plugin...", image:"/Best-WordPress.png", color:"yellow", border:"white" }
+    { title:"best wordpress eso plugin", image:"/Best-WordPress.png", color:"yellow", border:"white" }
   ]
 
   return (
@@ -38,9 +38,9 @@ const Blog = () => {
           <div key={index} style={{background:item.color, color:item.border}} className=" flex justify-center items-center text-white p-2">
             <a className="w-full blogSvg p-4 h-full flex justify-center relative items-center" href="#">
               <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-                <rect stroke={item.border} className="transition-all duration-[0.5s] " fill="transparent" strokeWidth="1" width="100%" height="100%" />
+                <rect stroke={item.border} className="transition-all duration-[0.8s] " fill="transparent" strokeWidth="1" width="100%" height="100%" />
               </svg>
-              <div className='flex gap-2 p-2 justify-center items-center w-full m-0 h-full' >
+              <div className='flex flex-col gap-2 p-4 justify-center items-center w-full m-0 h-full' >
                 <div className='w-1/2'>
                   <Image src={item.image} width={250} height={100} alt='Financial Icon' />
                 </div>

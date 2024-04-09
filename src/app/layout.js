@@ -10,6 +10,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log(window.scrollY);
   return (
     <html data-theme="light" lang="en">
       <head>
@@ -23,12 +24,6 @@ export default function RootLayout({ children }) {
             <a target="_blank" href="https://www.linkedin.com/in/aslam-alam-305193286/" className="text-[pink]" ><FaLinkedin /> </a>
             <a target="_blank" href="https://twitter.com/Aslam_Alam_07" className="text-[cyan]" ><FaTwitter /> </a>
           </div>
-        </div>
-        <div className="w-8 z-50 h-24 flex flex-col justify-between fixed top-[30rem] p-[3px] right-1 " >
-          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
-          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
-          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
-          <div className="w-2 h-2 bg-[red] rounded-full " ></div>
         </div>
         {children}
       </body>
