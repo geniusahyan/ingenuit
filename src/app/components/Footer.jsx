@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className='w-screen h-screen bg-[#0a1d50] text-[#c7c6c6] flex flex-col py-20 ' >
+    <section className='w-screen h-screen bg-[#0a1d50] text-[#c7c6c6] flex flex-col py-20 px-20 ' >
       <div className="about-dropmenu capitalize pt-4 flex -left-[28rem]  justify-around w-full py-4  ">
         <div>
           <h1 className='text-[0.9rem] mb-2 font-bold' >web and mobile app design</h1>
@@ -38,6 +38,7 @@ const Footer = () => {
           <li>domain name registration</li>
         </div>
       </div>
+      <div className="divider divider-secondary mx-20 "></div>
       <div className="footer px-12 ml-12 p-10">
         <nav>
           <h6 className="footer-title">Services</h6> 

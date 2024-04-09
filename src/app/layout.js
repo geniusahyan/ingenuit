@@ -10,7 +10,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  console.log(window.scrollY);
   return (
     <html data-theme="light" lang="en">
       <head>
